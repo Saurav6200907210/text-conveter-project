@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice to Text Converter</h1>
+        
+        <div class="converter-container">
+            <textarea class="text-box" placeholder="Your converted text will appear here..." readonly></textarea>
+            
+            <div class="language-select">
+                <label for="language">Select Language:</label>
+                <select id="language">
+                    <option value="en-US">English (US)</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="it-IT">Italian</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <button class="btn start-btn">
+                    <i class="mic-icon">🎤</i>
+                    Start Recording
+                </button>
+                <button class="btn copy-btn">
+                    <i class="copy-icon">📋</i>
+                    Copy Text
+                </button>
+                <button class="btn clear-btn">
+                    <i class="clear-icon">🗑️</i>
+                    Clear Text
+                </button>
+                <button class="btn save-btn">
+                    <i class="save-icon">💾</i>
+                    Save Text
+                </button>
+            </div>
+
+            <div class="status-container">
+                <p class="status">Click 'Start Recording' to begin</p>
+                <div class="audio-visualization">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
